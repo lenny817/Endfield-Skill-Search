@@ -26,8 +26,7 @@ jobs:
           node-version: "20"
 
       - run: npm ci
-
-      - run: NUXT_APP_BASE_URL=/Endfield-Skill-Search/ npm run build -- --preset github_pages
+      - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
