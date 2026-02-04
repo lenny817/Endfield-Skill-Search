@@ -27,7 +27,7 @@ jobs:
 
       - run: npm ci
 
-      - run: NUXT_APP_BASE_URL=/<YOUR_REPO_NAME>/ npx nuxt build --preset github_pages
+      - run: NUXT_APP_BASE_URL=/Endfield-Skill-Search/ npx nuxt build --preset github_pages
 
       - uses: actions/upload-pages-artifact@v3
         with:
