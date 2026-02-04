@@ -27,7 +27,6 @@ jobs:
 
       - run: npm ci
 
-      # ★ ここ重要：リポジトリ配下で公開するため baseURL を repo 名に合わせる
       - run: NUXT_APP_BASE_URL=/<YOUR_REPO_NAME>/ npx nuxt build --preset github_pages
 
       - uses: actions/upload-pages-artifact@v3
