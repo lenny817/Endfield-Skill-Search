@@ -74,7 +74,7 @@ export default defineComponent({
   methods: {
     async loadData(): Promise<void> {
       try {
-        const response = await fetch('/data.json');
+        const response = await fetch(`${import.meta.env.BASE_URL}data.json`);
         this.allData = await response.json();
       } catch (error) {
         console.error('データの読み込みエラー:', error);
